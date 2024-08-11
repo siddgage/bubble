@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: user-service
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show-sql: true
+        format_sql: true
+        ddl-auto: none
+        default_schema: bubble
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bubble
+    username: postgres
+    password: pass
